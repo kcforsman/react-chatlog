@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
+import MessageLog from './components/MessageLog.js'
 import chatMessages from './data/messages.json';
 
 class App extends Component {
   render() {
     console.log(chatMessages);
-
+    const messageLog = chatMessages.map((message) => {
+      return(
+        {
+          body: message.body,
+          sender: message.sender,
+          time: message.timeStamp
+        }
+      );
+    })
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Application title</h1>
-        </header>
-        <main className="App-main">
-        </main>
-      </div>
+      <main className="App">
+        <h1>Chat between Vladimir and Estragon</h1>
+        <MessageLog messages={messageLog}/>
+      </main>
     );
   }
 }
