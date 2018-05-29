@@ -28,7 +28,7 @@ class MessageLog extends Component {
     });
 
     return(
-      <section>
+      <section className="message-log">
         {messageComponents}
       </section>
     )

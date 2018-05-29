@@ -1,0 +1,14 @@
+.message {
+  padding: 10px 50px;
+}
+
+.body-bubble {
+  background-color: #ffeee6;
+  width: 30%;
+  padding: 10px 30px;
+  border-radius: 20%;
+}
+
+.right .body-bubble {
+  float: right;
+}

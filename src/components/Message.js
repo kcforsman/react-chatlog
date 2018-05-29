@@ -12,10 +12,12 @@ class Message extends Component {
 
   render() {
     return(
-      <section className={this.props.sender === "Vladimir" ? "left" : "right"}>
+      <section className={this.props.sender === "Vladimir" ? "message left" : "message right"}>
         <h3>{this.props.sender}</h3>
-        <p>{this.props.body}</p>
-        <h6><Timestamp time={this.props.time}/></h6>
+        <div className="body-bubble">
+          <p>{this.props.body}</p>
+          <h6><Timestamp time={this.props.time}/></h6>
+        </div>
       </section>
     )
   }

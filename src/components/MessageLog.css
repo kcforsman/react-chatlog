@@ -1,0 +1,12 @@
+.message-log {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow: scroll;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}

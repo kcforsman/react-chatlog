@@ -17,7 +17,9 @@ class App extends Component {
     })
     return (
       <main className="App">
-        <h1>Chat between Vladimir and Estragon</h1>
+        <header>
+          <h1>Chat between Vladimir and Estragon</h1>
+        </header>
         <MessageLog messages={messageLog}/>
       </main>
     );
