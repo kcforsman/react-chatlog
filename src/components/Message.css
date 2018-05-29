@@ -1,5 +1,10 @@
 .message {
-  padding: 10px 50px;
+  padding: 0 50px;
+}
+
+.message h3 {
+  margin: 0;
+  padding: 15px 0;
 }
 
 .body-bubble {
