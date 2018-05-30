@@ -21,8 +21,8 @@ class MessageLog extends Component {
         <Message
           body={message.body}
           sender={message.sender}
-          time={message.time}
-          key={message.time}
+          time={message.timeStamp}
+          key={message.timeStamp}
         />
       )
     });
